@@ -1,0 +1,26 @@
+
+
+public class argumentLine {
+    public static void main(String[] args) {
+        int sum = 0;
+        int invalidCount = 0;
+
+        // Loop through each command-line argument
+        for (String arg : args) {
+            try {
+                // Try to parse the argument as an integer
+                int num = Integer.parseInt(arg);
+                // If parsing succeeds, add the number to the sum
+                sum += num;
+            } catch (NumberFormatException e) {
+                // If parsing fails, increment the invalid count
+                invalidCount++;
+            }
+        }
+
+        // Print the sum and the count of invalid integers
+        System.out.println("Sum of valid integers: " + sum);
+        System.out.println("Count of invalid integers: " + invalidCount);
+    }
+}
+
