@@ -1,0 +1,15 @@
+public class equalString
+{
+    public static void main(String[] args)
+    {
+        String str, str1;
+        Scanner scanner = new Scanner(System.in);
+        str = scanner.nextLine();
+        str1= scanner.nextLine();
+
+
+        if(str1 == str)
+            System.out.println("Both string are equals");
+        else System.out.println("Strings are not equals.");
+    }
+}
